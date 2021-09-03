@@ -40,6 +40,7 @@
         font-size: 22px;
         letter-spacing: 6px;
         font-family: $josefinsans-reg;
+        margin-bottom: 10px;
 
         @include breakpoint($tablet-bp) {
             font-size: 18px;

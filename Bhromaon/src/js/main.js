@@ -1,9 +1,10 @@
-$(document).ready(function () {
-    $('.js-button-nav').on('click', function () {
-        if ($('.js-body').hasClass('active')) {
-            $('.js-body').removeClass('active');
+$( document ).ready(function() {
+    $('.js-burger-btn').on('click', function() {
+        if($('.js-header').hasClass('active')) {
+            $('.js-header').removeClass('active');
         } else {
-            $('.js-body').addClass('active');
+            $('.js-header').addClass('active');
         }
     })
 });
+

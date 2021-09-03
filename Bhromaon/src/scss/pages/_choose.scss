@@ -40,8 +40,9 @@
     }
 
     &__img {
-        width: 100%;
-        max-width: 350px;
+        max-width: 100%;
+        height: auto;
+        width: auto;
 
         &:first-child {
             align-self: flex-start;
