@@ -1,0 +1,169 @@
+.hero {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    @include breakpoint($tablet-bp) {
+        height: calc(100vh - 70px);
+        padding: 205px 0 0 0;
+    }
+
+    @include breakpoint($mobile-bp) {
+        height: calc(100vh - 50px);
+        padding: 120px 0 0 0;
+    }
+
+    &__title {
+        font-family: $josefinsans-reg;
+        font-size: 48px;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+        margin: 0 0 15px;
+        color: $white;
+
+        @include breakpoint ($tablet-bp) {
+            font-size: 46px;
+        }
+
+        @include breakpoint($mobile-bp){
+            font-size: 38px;
+        }
+    }
+
+    &__description {
+        display: block;
+        color: $white;
+        font-size: 22px;
+        letter-spacing: 6px;
+        font-family: $josefinsans-reg;
+
+        @include breakpoint($tablet-bp) {
+            font-size: 18px;
+            letter-spacing: 4px;  
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: 100%;       
+        margin: 45px 0 120px;
+
+        @include breakpoint($tablet-bp) {
+            margin: 0 0 80px;
+        }
+
+        @include breakpoint($mobile-bp) {
+            margin: 0 0 50px;
+        }
+    }
+
+    &__input {
+        border: 2px solid $white;
+        background-color: $white;
+        width: calc(100% - 145px);
+        text-align: center;
+        font-family: $josefinsans-reg;
+        font-size: 14px;
+        letter-spacing: 2px;
+        height: 60px;
+
+        @include breakpoint($tablet-bp) {
+            height: 50px;
+          }
+        
+          @include breakpoint($mobile-bp) {
+            height: 40px;
+            font-size: 10px;
+          }
+
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        height: 60px;
+        background-color: $blue;
+        border: 2px solid $white;
+        color: $white;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-family: $aleo-reg;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        transition: all .3s linear;
+      
+        @include breakpoint($tablet-bp) {
+          width: 130px;
+          height: 50px;
+          border: 1px solid $white;
+        }
+      
+        @include breakpoint($mobile-bp) {
+          width: 100px;
+          height: 40px;
+          font-size: 10px;
+        }
+      
+        &:hover {
+            opacity: 0.8;
+        }
+      
+        span {
+          display: block;
+          margin-right: 14px;
+      
+          @include breakpoint($tablet-bp) {
+            margin-right: 10px;
+          }
+      
+          @include breakpoint($mobile-bp) {
+            margin-right: 8px;
+          }
+        }
+      
+        &_icon {
+          font-size: 24px;
+          padding-left: 10px;
+      
+          @include breakpoint($tablet-bp) {
+            font-size: 20px;
+          }
+        }
+    }
+
+    &__scroll {
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &:hover {
+            text-decoration: none;
+            transform: translateY(2px);
+            transition-duration: 0.3s;
+        }
+    }
+
+    &__icon-scroll {
+        display: block;
+        font-size: 16px;
+
+        @include breakpoint($tablet-bp) {
+            font-size: 12px;
+            margin: 0 0 12px;
+        }
+    
+        @include breakpoint($mobile-bp) {
+            font-size: 10px;
+            margin: 0 0 10px;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'josefin bold';
+    src: url('../fonts/josefins/josefinsans-bold-webfont.eot');
+    src: url('../fonts/josefins/josefinsans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/josefins/josefinsans-bold-webfont.woff2') format('woff2'),
+         url('../fonts/jjosefins/josefinsans-bold-webfont.woff') format('woff'),
+         url('../fonts/josefins/josefinsans-bold-webfont.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'josefin regular';
+    src: url('../fonts/josefins/josefinsans-regular-webfont.eot');
+    src: url('../fonts/josefins/josefinsans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/josefins/josefinsans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/josefins/josefinsans-regular-webfont.woff') format('woff'),
+         url('../fonts/josefins/josefinsans-regular-webfont.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'aleo regular';
+    src: url('../fonts/aleo/aleo-regular-webfont-webfont.eot');
+    src: url('../fonts/aleo/aleo-regular-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aleo/aleo-regular-webfont-webfont.woff2') format('woff2'),
+         url('../fonts/aleo/aleo-regular-webfont-webfont.woff') format('woff'),
+         url('../fonts/aleo/aleo-regular-webfont-webfont.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'aleo light';
+    src: url('../fonts/aleo/aleo-light-webfont-webfont.eot');
+    src: url('../fonts/aleo/aleo-light-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aleo/aleo-light-webfont-webfont.woff2') format('woff2'),
+         url('../fonts/aleo/aleo-light-webfont-webfont.woff') format('woff'),
+         url('../fonts/aleo/aleo-light-webfont-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

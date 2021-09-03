@@ -1,0 +1,115 @@
+.choose {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0;
+
+    @include breakpoint($tablet-bp)  {
+        padding: 90px 0;
+    }
+
+    @include breakpoint($mobile-bp) {
+        padding: 60px 0;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    &__column {
+        width: 50%;
+
+        @include breakpoint($tablet-bp) {
+            width: 100%;
+        }
+
+        @include breakpoint($mobile-bp) {
+            width: 90%;
+        }
+    
+
+        &_left {
+            padding-right: 15px;
+        }
+        &_right {
+            display: flex;
+            flex-direction:column;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        max-width: 350px;
+
+        &:first-child {
+            align-self: flex-start;
+            margin-bottom: 5px;
+          }
+
+         &:last-child {
+            align-self: flex-end;
+     
+        }
+    }
+    &__title {
+        color: $white;
+        font-family: $aleo-reg;
+        font-size: 36px;
+        font-weight: 400;
+        padding-bottom: 60px;
+
+        @include breakpoint($tablet-bp) {
+            padding-bottom: 40px;
+            font-size: 26px;
+        }
+    }
+
+    &__text {
+        color: $white;
+        font-family: $josefinsans-reg;
+        font-size: 16px;
+        font-weight: 300;
+        padding-bottom: 10px;
+        line-height: 24px;
+
+        p {
+            margin-bottom: 40px;
+
+            @include breakpoint($tablet-bp){
+                margin-bottom: 30px;
+            }
+            @include breakpoint($mobile-bp) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__btn {
+        margin-bottom: 20px;
+        padding: 20px 10px;
+        width: 100%;
+        max-width: 225px;
+        border: none;
+        text-align: center;
+        cursor: pointer;
+        background-image: url('../image/button-bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 24px;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: $white;
+        text-decoration: none;
+        transition: all .3s linear;
+        font-family: $josefinsans-reg;
+      
+        &:hover {
+            cursor: pointer;
+            opacity: 0.8;
+        }
+    }
+    
+}

@@ -1,0 +1,112 @@
+.reviews {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 120px 0;
+
+    @include breakpoint($tablet-bp) {
+        padding: 80px 0;   
+    }
+
+    @include breakpoint($mobile-bp){
+        padding: 50px 0;
+        min-height: 600px;
+    }
+
+    &__subtitle {
+        text-align: center;
+        color: $white;
+        font-size: 36px;
+        text-transform: capitalize;
+        margin-bottom: 50px;
+        font-family: $aleo-reg;
+        font-weight: normal;
+
+        @include breakpoint($tablet-bp) {
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+    
+        @include breakpoint($mobile-bp){
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+    }
+    
+    &__row {
+        display: flex;
+        justify-content: center;
+        background-color: rgb(51, 51, 51, 0.5);
+
+        @include breakpoint($tablet-bp) {
+            flex-direction: column; 
+            align-items: center;
+            width: 90%;
+            margin: 0 auto; 
+        }
+
+        @include breakpoint($mobile-bp) {
+            width: 100%;
+        }
+    }
+
+    &__column-image {
+        width: 40%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;  
+
+        @include breakpoint($tablet-bp) {
+            width: 100%;
+            min-height: 285px;
+            max-width: 445px;
+        }
+    }
+
+    &__column-text-holder {
+        width: 60%;
+        font-family: $josefinsans-reg;
+        
+        @include breakpoint($tablet-bp) {
+            width: 100%;
+            padding: 50px;  
+        }
+
+        @include breakpoint($mobile-bp) {
+            width: 100%;
+            padding: 0px;  
+        }
+    }
+
+    &__user-name{
+        padding: 50px 35px 0;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: $white;
+        margin-bottom: 25px;
+
+        @include breakpoint($tablet-bp) {
+            margin-bottom: 35px;
+        }
+    
+        @include breakpoint($mobile-bp){
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__text{
+        line-height: 25px;
+        color: $white;
+        padding: 0 35px 50px;
+    }
+
+    &__text p {
+        text-indent: 1.5em;
+    }
+
+    &__quotest {
+        color: $blue;
+    }
+
+}

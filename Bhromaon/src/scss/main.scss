@@ -1,0 +1,79 @@
+@import "variable";
+@import "fonts/fonts";
+@import "mixins";
+@import "pages/hero";
+@import "blocks/header";
+@import "blocks/footer";
+@import "pages/choose";
+@import "pages/action";
+@import "pages/spain-appart";
+@import "pages/spain-nature";
+@import "pages/reviews";
+
+* {
+    box-sizing: border-box
+  }
+  
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4, 
+  h5,
+  h6,
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+  .container {
+    max-width: 1110px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  
+  a {
+    display: block;
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    text-transform: uppercase;
+}
+
+.btn {
+  width: 100%;
+  max-width: 225px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  background-image: url('../image/button-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 24px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $white;
+  text-decoration: none;
+  transition: all .3s linear;
+  font-family: $josefinsans-reg;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+}

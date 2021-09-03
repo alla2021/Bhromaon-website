@@ -1,0 +1,112 @@
+.action {
+    background-color: $grey-footer;
+    padding: 100px 0 40px;
+
+    @include breakpoint($tablet-bp) {
+         padding: 80px 0 40px;
+    }
+
+    @include breakpoint($mobile-bp) {
+        padding: 50px 0 20px;
+    }
+
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+
+        @include breakpoint($tablet-bp) {
+          display: flex;
+          flex-direction: column;   
+      }
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        @include breakpoint($tablet-bp) {
+            margin-bottom: 30px;
+        }
+
+        @include breakpoint($mobile-bp) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__bg-line-first {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 15%;
+
+        @include breakpoint($tablet-bp) {
+            visibility: hidden;
+        }
+
+        @include breakpoint($mobile-bp) {
+            visibility: hidden;
+        }
+    }
+
+    &__bg-line-second {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 15%;
+
+        @include breakpoint($tablet-bp) {
+            visibility: hidden;
+        }
+
+        @include breakpoint($mobile-bp) {
+            visibility: hidden;
+        }
+    }
+
+    &__icon{
+        display: block;
+        text-align: center;
+        color: $white;
+        font-size: 62px;
+        margin-bottom: 25px;
+
+        @include breakpoint($tablet-bp) {
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+
+        @include breakpoint($mobile-bp) {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        &_search {
+            color:$blue;
+        }
+        &_check {
+            color:$red;
+        }
+
+        &_like {
+            color:$blue-like;
+        }
+    }
+
+    &__text {
+        display: block;
+        color: $white;
+        font-size: 36px;
+        font-family: $aleo-reg;
+
+        @include breakpoint($tablet-bp) {
+            font-size: 24px;
+        }
+
+        @include breakpoint($mobile-bp) {
+            font-size: 20px;
+        }
+    }
+}
