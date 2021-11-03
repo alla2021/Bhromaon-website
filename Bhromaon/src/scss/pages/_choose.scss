@@ -49,7 +49,10 @@
 
     &__img {
         display: block;
-        max-width: 100%;
+        img {
+            width: 100%;
+            max-width: 354px;
+        }
 
         &_first {
             margin-bottom: 5px;
@@ -66,7 +69,7 @@
         font-size: 36px;
 
         @include breakpoint($tablet-bp) {
-            padding-bottom: 40px;
+            padding-bottom: 20px;
             font-size: 26px;
         }
     }
