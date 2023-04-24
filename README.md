@@ -13,7 +13,7 @@ Product page with detailed information about each product
 Contact page with a form to send messages to Bhromaon
 Responsive design that works on desktop and mobile devices
 
-![cbd](https://user-images.githubusercontent.com/75502074/234058961-50eea0d7-bb60-4baa-a18b-7e07ebe295b3.png)
+![bhromaon](https://user-images.githubusercontent.com/75502074/234059524-5d21e621-8a2a-45a7-9aeb-ccc2bbe20882.png)
 
 ## Technologies
 The website was created using the following technologies:
