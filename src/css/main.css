@@ -49,6 +49,7 @@
   .hero {
     height: calc(100vh - 50px);
     padding: 120px 0 0 0;
+    position: relative;
   }
 }
 .hero__title {
@@ -193,7 +194,12 @@
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  position: absolute;
+  left: 0; 
+  right: 0; 
+  bottom: 11%;
+  margin-left: auto; 
+  margin-right: auto; 
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
