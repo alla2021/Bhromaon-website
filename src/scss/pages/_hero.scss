@@ -1,4 +1,5 @@
 .hero {
+    background-image: url(/image/bg_header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -6,6 +7,7 @@
     display: flex;
     align-items: center;
     text-align: center;
+    position: relative;
 
     @include breakpoint($tablet-bp) {
         height: calc(100vh - 70px);
@@ -76,13 +78,12 @@
 
         @include breakpoint($tablet-bp) {
             height: 50px;
-          }
+        }
         
-          @include breakpoint($mobile-bp) {
-            height: 40px;
-            font-size: 10px;
-          }
-
+        @include breakpoint($mobile-bp) {
+        height: 40px;
+        font-size: 10px;
+        }
     }
 
     &__btn {
@@ -100,43 +101,43 @@
         font-size: 14px;
         letter-spacing: 0.1em;
         transition: all .3s linear;
-      
+
         @include breakpoint($tablet-bp) {
-          width: 130px;
-          height: 50px;
-          border: 1px solid $white;
+            width: 130px;
+            height: 50px;
+            border: 1px solid $white;
         }
-      
+
         @include breakpoint($mobile-bp) {
-          width: 100px;
-          height: 40px;
-          font-size: 10px;
+            width: 100px;
+            height: 40px;
+            font-size: 10px;
         }
-      
+        
         &:hover {
             opacity: 0.8;
         }
-      
+        
         span {
-          display: block;
-          margin-right: 14px;
-      
-          @include breakpoint($tablet-bp) {
-            margin-right: 10px;
-          }
-      
-          @include breakpoint($mobile-bp) {
-            margin-right: 8px;
-          }
-        }
-      
-        &_icon {
-          font-size: 24px;
-          padding-left: 10px;
-      
-          @include breakpoint($tablet-bp) {
-            font-size: 20px;
-          }
+            display: block;
+            margin-right: 14px;
+        
+            @include breakpoint($tablet-bp) {
+                margin-right: 10px;
+            }
+        
+            @include breakpoint($mobile-bp) {
+                margin-right: 8px;
+            }
+            }
+        
+            &_icon {
+            font-size: 24px;
+            padding-left: 10px;
+        
+            @include breakpoint($tablet-bp) {
+                font-size: 20px;
+            }
         }
     }
 
@@ -145,26 +146,15 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: transform 0.3s ease;
+   
         &:hover {
-            text-decoration: none;
-            transform: translateY(2px);
-            transition-duration: 0.3s;
+            transform: translateX(-50%) translateY(5px);
         }
     }
 
-    &__icon-scroll {
-        display: block;
-        font-size: 16px;
-
-        @include breakpoint($tablet-bp) {
-            font-size: 12px;
-            margin: 0 0 12px;
-        }
-    
-        @include breakpoint($mobile-bp) {
-            font-size: 10px;
-            margin: 0 0 10px;
-        }
-    }
 }

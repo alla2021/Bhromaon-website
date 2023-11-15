@@ -1,4 +1,5 @@
 .spain-appartament {
+    background-image: url('/image/bg_spain-appartaments.jpg');
     height: 700px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -10,7 +11,6 @@
         display: flex;
         align-items:flex-end;
         margin-bottom: 40px;
-
     }
 
     &__holder {

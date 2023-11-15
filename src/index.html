@@ -5,17 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/main.css">
-    <link rel="stylesheet" href="src/css/icon-fonts.css">
-    <link rel="shortcut icon" type="image/png" href="src/image/Letter_B_.ico" />
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="src/js/main.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
     <title>BHROMAON</title>
 </head>
 <body>
     <main>
-        <section class="hero" style="background-image: url('src/image/bg_header.jpg');">
+        <section class="hero">
             <div class="container">
                 <h1 class="hero__title">BHROMAON</h1>
                 <span class="hero__description">Safe Travel Anywhere</span>
@@ -25,7 +20,20 @@
                 </form>
                 <a href="#choose" class="hero__scroll">
                     <span>Scroll Down</span>
-                    <span class="hero__icon-scroll hero__icon-scroll_icon icon-scroll"></span>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="40px"
+                        height="40px"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        style="cursor: pointer;"
+                        >
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
                 </a>
             </div>
         </section>
@@ -51,7 +59,7 @@
                 </div>
             </div>
         </section>
-        <section class="choose" style="background-image: url('src/image/bg_choose-us.jpg');">
+        <section class="choose">
             <div class="container">
                 <div class="choose__row">
                     <div class="choose__column choose__column_left">
@@ -68,10 +76,10 @@
                     </div>
                     <div class="choose__column choose__column_right">
                         <div class="choose__img choose__img_first" >
-                            <img src="src/image/img-photo-1.jpg" alt="">
+                            <img src="./image/img-photo-1.jpg" alt="">
                         </div>
                         <div class="choose__img choose__img_second">
-                            <img src="src/image/img-photo-2.jpg" alt="">
+                            <img src="./image/img-photo-2.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -81,7 +89,7 @@
             <div class="container">
                 <div class="action__row">
                     <div class="action__bg-line-first">
-                        <img src="src/image/line.png" alt="" />
+                        <img src="./image/line.png" alt="" />
                     </div>
                     <div class="action__column">
                         <span class="action__icon action__icon_search icon-search-svg"></span><span
@@ -98,12 +106,12 @@
                             Enjoy</span>
                     </div>
                     <div class="action__bg-line-second">
-                        <img src="src/image/line.png" alt="" />
+                        <img src="./image/line.png" alt="" />
                     </div>
                 </div>
             </div>
         </section>
-        <section class="spain-appartament" style="background-image: url('src/image/bg_spain-appartaments.jpg');">
+        <section class="spain-appartament">
             <div class="container">
                 <div class="spain-appartament__row spain-appartament__row_left">
                     <div class="spain-appartament__column">
@@ -124,7 +132,7 @@
                 </div>
             </div>
         </section>
-        <section class="spain-nature" style="background-image: url('src/image/bg_spain-nature.jpg');">
+        <section class="spain-nature">
             <div class="container">
                 <div class="spain-nature__row spain-nature__row_right">
                     <div class="spain-nature__column">
@@ -143,12 +151,11 @@
             </div>
             </div>
         </section>
-        <section class="reviews" style="background-image: url('src/image/bg_reviews.jpg');">
+        <section class="reviews">
             <div class="container">
                 <h2 class="reviews__subtitle">What Our Tourist Say</h2>
                 <div class="reviews__row">
-                    <div class="reviews__column-image"
-                        style="background-image: url('src/image/user-photo-sam-sumon.jpg');">
+                    <div class="reviews__column-image">
                     </div>
                     <div class="reviews__column-text-holder">
                         <h3 class="reviews__user-name">Sam Sumon</h3>
@@ -180,14 +187,16 @@
                 <div class="footer__logo"><a href="#" class="footer__link logo__link_footer">Bhromaon</a></div>
                 <p class="footer__description">Safe Travel Anywhere</p>
                 <ul class="footer__social">
-                    <li class="footer__icon"><span class="icon-facebook"></span></li>
-                    <li class="footer__icon"><span class="icon-twitter"></span></i></li>
-                    <li class="footer__icon"><span class="icon-linkedin2"></span></li>
-                    <li class="footer__icon"><span class="icon-youtube"></span></li>
-                    <li class="footer__icon"><span class="icon-pinterest"></span></li>
+                    <li class="footer__icon"><a href="#" target="_blank"><span class="icon-linkedin"></span></a></span></li>
+                    <li class="footer__icon"><a href="#" target="_blank"><span class="icon-twitter"></span></a></i></li>
+                    <li class="footer__icon"><a href="#" target="_blank"><span class="icon-facebook"></span></a></li>
+                    <li class="footer__icon"><a href="#" target="_blank"><span class="icon-pinterest"></span></a></li>
+                    <li class="footer__icon"><a href="#" target="_blank"><span class="icon-youtube"></span></a></li>
                 </ul>
             </div>
         </section>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="script/script.js"></script>
 </body>
 </html>

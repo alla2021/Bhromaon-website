@@ -1,4 +1,5 @@
 .choose {
+    background-image: url(/image/bg_choose-us.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,10 +21,10 @@
         @include breakpoint($mobile-bp) {
             width: 90%;
         }
-  
+
         &:first-child {
             padding: 85px 15px 0 0;
-  
+
             @include breakpoint($tablet-bp) {
                 margin-bottom: 60px;
                 padding: 0 15px;
@@ -34,18 +35,18 @@
                 padding: 0 15px;
             }
         }
-  
+
         &:last-child {
             padding-left: 80px;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-  
+
             @include breakpoint($tablet-bp) {
                 padding: 0;    
             }
         }
-      }
+    }
 
     &__img {
         display: block;
@@ -101,7 +102,7 @@
         border: none;
         text-align: center;
         cursor: pointer;
-        background-image: url('../image/button-bg.jpg');
+        background-image: url('/image/button-bg.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
