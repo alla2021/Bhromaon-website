@@ -3,7 +3,7 @@
     padding: 100px 0 40px;
 
     @include breakpoint($tablet-bp) {
-         padding: 80px 0 40px;
+        padding: 80px 0 40px;
     }
 
     @include breakpoint($mobile-bp) {
@@ -15,7 +15,6 @@
         display: flex;
         justify-content: space-between;
         position: relative;
-
 
         @include breakpoint($tablet-bp) {
         display: flex;
