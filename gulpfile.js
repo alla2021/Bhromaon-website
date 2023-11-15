@@ -81,7 +81,6 @@ function copyImages() {
     .pipe(gulp.dest('docs/image'));
 }
 
-
 function cleanUp() {
   return del('docs')
 }
