@@ -337,11 +337,12 @@
   .header__list {
     background-color: #5474fd;
     margin: 0;
-    padding: 25px;
     flex-direction: column;
+    gap: 10px;
     align-items: center;
     text-align: center;
     width: 100%;
+    height: calc(100vh - 80px);
   }
 }
 @media screen and (max-width: 990px) {
@@ -369,7 +370,7 @@
   height: 20px;
   position: absolute;
   bottom: 50%;
-  right: 50px;
+  right: 10px;
   transform: translateY(50%);
   background-color: transparent;
   outline: none;
