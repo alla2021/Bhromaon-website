@@ -2,6 +2,7 @@ const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
+const cssnano = require('gulp-cssnano'); // Add this line
 const browserSync = require('browser-sync').create();
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
@@ -61,7 +62,7 @@ function copyFonts() {
 function buildStyles() {
   return gulp.src('src/css/*.css')
     .pipe(autoprefixer())
-    .pipe(cleanCSS())
+    .pipe(cssnano()) // Use cssnano here
     .pipe(gulp.dest('docs/css'))
 }
 

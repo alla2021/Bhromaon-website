@@ -1,18 +1,13 @@
 .hero {
+    height: calc(100vh-80px);
     background-image: url("../image/bg_header.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: calc(100vh - 80px);
     display: flex;
     align-items: center;
     text-align: center;
     position: relative;
-
-    @include breakpoint($tablet-bp) {
-        height: calc(100vh - 70px);
-        padding: 205px 0 0 0;
-    }
 
     @include breakpoint($mobile-bp) {
         height: calc(100vh - 50px);

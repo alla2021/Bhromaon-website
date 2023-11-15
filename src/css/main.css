@@ -77,11 +77,11 @@
 }
 
 .hero {
+  height: 100vh-;
   background-image: url("../image/bg_header.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: calc(100vh - 80px);
   display: flex;
   align-items: center;
   text-align: center;
@@ -242,10 +242,7 @@
 
 .header {
   background-color: #5474fd;
-  position: absolute;
-  top: calc(100vh - 80px);
-  right: 0;
-  left: 0;
+  height: 80px;
 }
 @media screen and (max-width: 990px) {
   .header {

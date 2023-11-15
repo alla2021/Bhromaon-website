@@ -1,16 +1,9 @@
 .header {
     background-color: $blue;
-    position: absolute;
-    top: calc(100vh - 80px);
-    right: 0;
-    left: 0;
-    
-    @include breakpoint ($tablet-bp) {
-        top: calc(100vh - 65px);
-    }
+    height: 80px;
 
     @include breakpoint ($mobile-bp) {
-        top: calc(100vh - 50px);
+        height: 50px;
     }
 
     &.active {
@@ -38,22 +31,21 @@
         }
     }
 
-    &__holder {
-        height: 80px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-        z-index: 10;
+    //&__holder {
+    //    display: flex;
+    //    justify-content: space-between;
+    //    align-items: center;
+    //    position: relative;
+    //    z-index: 10;
 
-        @include breakpoint ($tablet-bp) {
-            height: 70px;
-        }
+    //    @include breakpoint ($tablet-bp) {
+    //        height: 70px;
+    //    }
     
-        @include breakpoint ($mobile-bp) {
-            height: 50px;
-        }
-    }
+    //    @include breakpoint ($mobile-bp) {
+    //        height: 50px;
+    //    }
+    //}
 
     &__logo a {
         font-size: 24px;
@@ -79,7 +71,6 @@
 
         @include breakpoint ($tablet-bp) {
         position: absolute;
-        padding: 20px;
         font-family: $aleo-reg;
         bottom: 50px;
         right: 0;
@@ -100,11 +91,8 @@
             background-color: $blue;
             margin: 0;
             flex-direction: column;
-            gap: 10px;
             align-items: center;
             text-align: center;
-            width: 100%;
-            height: calc(100vh - 80px);
         }
     }
 
